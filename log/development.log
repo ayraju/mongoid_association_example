@@ -1,0 +1,1331 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 17:49:50 +0530
+Connecting to database specified by database.yml
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.5793ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5534ms)
+  Rendered posts/index.html.erb within layouts/application (31.2ms)
+Compiled posts.css  (99ms)  (pid 2755)
+Compiled scaffolds.css  (34ms)  (pid 2755)
+Compiled application.css  (185ms)  (pid 2755)
+Compiled jquery.js  (3ms)  (pid 2755)
+Compiled jquery_ujs.js  (0ms)  (pid 2755)
+Compiled posts.js  (694ms)  (pid 2755)
+Compiled application.js  (855ms)  (pid 2755)
+Completed 200 OK in 1467ms (Views: 1465.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 17:49:52 +0530
+Served asset /posts.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 17:49:52 +0530
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:52 +0530
+Served asset /posts.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:52 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:53 +0530
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 17:49:53 +0530
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:53 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-03-08 17:49:55 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (89.8ms)
+  Rendered posts/new.html.erb within layouts/application (172.8ms)
+Completed 200 OK in 195ms (Views: 193.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 17:49:55 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 17:49:55 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:55 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:55 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:55 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-03-08 17:49:59 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.9ms)
+  Rendered posts/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 17:49:59 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 17:49:59 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:59 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:59 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 17:49:59 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-03-08 17:50:07 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "post"=>{"name"=>"raju", "description"=>"test"}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 INSERT       database=mongoid_associations_example_development collection=posts documents=[{"_id"=>"5139d777663c9bad02000001", "name"=>"raju", "description"=>"test"}] flags=[] (0.3531ms)
+Redirected to http://localhost:3000/posts/5139d777663c9bad02000001
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5139d777663c9bad02000001" for 127.0.0.1 at 2013-03-08 17:50:07 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139d777663c9bad02000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139d777663c9bad02000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (231.5240ms)
+  Rendered posts/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 296ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 17:50:08 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 17:50:08 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 17:50:08 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 17:50:08 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 17:50:08 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 17:50:09 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.1728ms)
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 17:50:09 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 17:50:09 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 17:50:09 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 17:50:09 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 17:50:09 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-03-08 18:01:51 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.3ms)
+  Rendered posts/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:51 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:51 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:51 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:51 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:51 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:51 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:51 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "post"=>{"name"=>"sdad", "description"=>"adadad"}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6368ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=mongoid_associations_example_development collection=posts documents=[{"_id"=>"5139da3a663c9bad02000002", "name"=>"sdad", "description"=>"adadad"}] flags=[] (0.4165ms)
+Redirected to http://localhost:3000/posts/5139da3a663c9bad02000002
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5139da3a663c9bad02000002" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5229ms)
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:54 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 18:01:55 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6628ms)
+  Rendered posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:55 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:55 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:01:55 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:55 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:55 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:55 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:01:55 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 18:02:13 +0530
+Connecting to database specified by database.yml
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (34.3595ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5035ms)
+  Rendered posts/index.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 156ms (Views: 154.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:02:13 +0530
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:02:13 +0530
+Served asset /posts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:02:13 +0530
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:02:13 +0530
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:02:13 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:02:13 +0530
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:02:13 +0530
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 18:03:20 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.7174ms)
+  Rendered posts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:21 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:21 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:21 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:21 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:21 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:21 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:21 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-03-08 18:03:22 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (30.4ms)
+  Rendered posts/new.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:22 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:22 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:22 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:22 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:22 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:22 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:22 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "post"=>{"name"=>"test", "published_on(1i)"=>"2009", "published_on(2i)"=>"2", "published_on(3i)"=>"2", "description"=>"sdadad"}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 INSERT       database=mongoid_associations_example_development collection=posts documents=[{"_id"=>"5139da9b663c9bea20000001", "name"=>"test", "published_on(1i)"=>"2009", "published_on(2i)"=>"2", "published_on(3i)"=>"2", "description"=>"sdadad"}] flags=[] (0.3490ms)
+Redirected to http://localhost:3000/posts/5139da9b663c9bea20000001
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5139da9b663c9bea20000001" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139da9b663c9bea20000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da9b663c9bea20000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6247ms)
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:31 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 18:03:32 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6666ms)
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 62ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:32 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:32 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:03:32 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:32 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:32 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:32 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:03:32 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 18:04:11 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6618ms)
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:12 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:12 +0530
+Served asset /posts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:12 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:12 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:12 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:12 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:12 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-03-08 18:04:13 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (9.6ms)
+  Rendered posts/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:13 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:13 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:13 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:13 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:13 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:13 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:13 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-03-08 18:04:19 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "post"=>{"name"=>"csfdsf", "published_on(1i)"=>"2010", "published_on(2i)"=>"3", "published_on(3i)"=>"4", "description"=>""}, "commit"=>"Create Post"}
+  Rendered posts/_form.html.erb (10.9ms)
+  Rendered posts/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:19 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:19 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:19 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:19 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:19 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:19 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:19 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "post"=>{"name"=>"csfdsf", "published_on(1i)"=>"2013", "published_on(2i)"=>"3", "published_on(3i)"=>"8", "description"=>"sfdsfsfsf"}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 INSERT       database=mongoid_associations_example_development collection=posts documents=[{"_id"=>"5139dace663c9bea20000002", "name"=>"csfdsf", "published_on(1i)"=>"2013", "published_on(2i)"=>"3", "published_on(3i)"=>"8", "description"=>"sfdsfsfsf"}] flags=[] (0.5758ms)
+Redirected to http://localhost:3000/posts/5139dace663c9bea20000002
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5139dace663c9bea20000002" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139dace663c9bea20000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139dace663c9bea20000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6633ms)
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 69ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:22 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 18:04:24 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.7272ms)
+  Rendered posts/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:24 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:24 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:04:24 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:24 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:24 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:24 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:04:24 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 18:12:28 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (20ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-08 18:12:40 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.6224ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6521ms)
+  Rendered posts/index.html.erb within layouts/application (56.1ms)
+Compiled comments.css  (16ms)  (pid 3186)
+Compiled application.css  (33ms)  (pid 3186)
+Compiled comments.js  (281ms)  (pid 3186)
+Compiled application.js  (304ms)  (pid 3186)
+Completed 200 OK in 587ms (Views: 585.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /posts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /comments.js - 200 OK (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:41 +0530
+Served asset /comments.css - 200 OK (3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-03-08 18:12:43 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (30.6ms)
+  Rendered posts/new.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:43 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:43 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:43 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:43 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:43 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:43 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:43 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/5139d777663c9bad02000001" for 127.0.0.1 at 2013-03-08 18:12:46 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139d777663c9bad02000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139d777663c9bad02000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6957ms)
+  Rendered posts/show.html.erb within layouts/application (108.0ms)
+Completed 200 OK in 125ms (Views: 121.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:46 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:46 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:12:46 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:46 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:46 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:46 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:12:46 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts/5139d777663c9bad02000001/comments" for 127.0.0.1 at 2013-03-08 18:12:52 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "comment"=>{"title"=>"test", "content"=>"hfjsjdfsdfsf"}, "commit"=>"Create Comment", "post_id"=>"5139d777663c9bad02000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139d777663c9bad02000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6917ms)
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `comments' for nil:NilClass):
+  app/controllers/comments_controller.rb:44:in `create'
+
+
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.3ms)
+
+
+Started POST "/posts/5139d777663c9bad02000001/comments" for 127.0.0.1 at 2013-03-08 18:13:14 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "comment"=>{"title"=>"testds", "content"=>"hfjsjdfsdfsfss"}, "commit"=>"Create Comment", "post_id"=>"5139d777663c9bad02000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139d777663c9bad02000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5903ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139d777663c9bad02000001"} update={"$push"=>{"comments"=>{"_id"=>"5139dce2663c9ba44b000001", "title"=>"testds", "content"=>"hfjsjdfsdfsfss"}}} flags=[] (0.8190ms)
+Redirected to http://localhost:3000/posts/5139d777663c9bad02000001
+Completed 302 Found in 40ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5139d777663c9bad02000001" for 127.0.0.1 at 2013-03-08 18:13:14 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139d777663c9bad02000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139d777663c9bad02000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6468ms)
+  Rendered posts/show.html.erb within layouts/application (34.0ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    17: 
+    18: <% if @post.comments.size > 0 %>  
+    19:   <h2>Comments</h2>  
+    20:   <% for comment in @article.comments %>  
+    21:     <h3><%= comment.title %></h3>  
+    22:     <p><%= comment.content %></p>  
+    23:   <% end %>  
+  app/views/posts/show.html.erb:20:in `_app_views_posts_show_html_erb___914475262_89145030'
+  app/controllers/posts_controller.rb:18:in `show'
+
+
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-08 18:13:19 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.8194ms)
+  Rendered posts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:20 +0530
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/posts/5139d777663c9bad02000001" for 127.0.0.1 at 2013-03-08 18:13:21 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139d777663c9bad02000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139d777663c9bad02000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.9611ms)
+  Rendered posts/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    17: 
+    18: <% if @post.comments.size > 0 %>  
+    19:   <h2>Comments</h2>  
+    20:   <% for comment in @article.comments %>  
+    21:     <h3><%= comment.title %></h3>  
+    22:     <p><%= comment.content %></p>  
+    23:   <% end %>  
+  app/views/posts/show.html.erb:20:in `_app_views_posts_show_html_erb___914475262_89145030'
+  app/controllers/posts_controller.rb:18:in `show'
+
+
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (3.8648ms)
+  Rendered posts/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:13:59 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/5139da3a663c9bad02000002" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5405ms)
+  Rendered posts/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:01 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts/5139da3a663c9bad02000002/comments" for 127.0.0.1 at 2013-03-08 18:14:07 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "comment"=>{"title"=>"dsdada", "content"=>"dadad"}, "commit"=>"Create Comment", "post_id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6118ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} update={"$push"=>{"comments"=>{"_id"=>"5139dd17663c9ba44b000002", "title"=>"dsdada", "content"=>"dadad"}}} flags=[] (0.3097ms)
+Redirected to http://localhost:3000/posts/5139da3a663c9bad02000002
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5139da3a663c9bad02000002" for 127.0.0.1 at 2013-03-08 18:14:07 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5202ms)
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    17: 
+    18: <% if @post.comments.size > 0 %>  
+    19:   <h2>Comments</h2>  
+    20:   <% for comment in @article.comments %>  
+    21:     <h3><%= comment.title %></h3>  
+    22:     <p><%= comment.content %></p>  
+    23:   <% end %>  
+  app/views/posts/show.html.erb:20:in `_app_views_posts_show_html_erb___914475262_89145030'
+  app/controllers/posts_controller.rb:18:in `show'
+
+
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/raju/.rvm/gems/ruby-1.9.3-p392@mongodb_example/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.4427ms)
+  Rendered posts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:34 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/5139da3a663c9bad02000002" for 127.0.0.1 at 2013-03-08 18:14:35 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6297ms)
+  Rendered posts/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 74ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:35 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:35 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:35 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:35 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:35 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:36 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:36 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:36 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:36 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts/5139da3a663c9bad02000002/comments" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "comment"=>{"title"=>"sdadada", "content"=>"dadad"}, "commit"=>"Create Comment", "post_id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.3046ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} update={"$push"=>{"comments"=>{"_id"=>"5139dd37663c9ba44b000003", "title"=>"sdadada", "content"=>"dadad"}}} flags=[] (0.6394ms)
+Redirected to http://localhost:3000/posts/5139da3a663c9bad02000002
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5139da3a663c9bad02000002" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5717ms)
+  Rendered posts/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:39 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts/5139da3a663c9bad02000002/comments" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oFm5kT5oSNA3Fs1HKZS50q7lpiicG1uRjlgZpB7RIK0=", "comment"=>{"title"=>"eeeeeeeeeeee", "content"=>"eeeeeeeeeeeeeeeeeeeeee"}, "commit"=>"Create Comment", "post_id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6199ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} update={"$push"=>{"comments"=>{"_id"=>"5139dd3b663c9ba44b000004", "title"=>"eeeeeeeeeeee", "content"=>"eeeeeeeeeeeeeeeeeeeeee"}}} flags=[] (0.6392ms)
+Redirected to http://localhost:3000/posts/5139da3a663c9bad02000002
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5139da3a663c9bad02000002" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5875ms)
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:43 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/5139da3a663c9bad02000002" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5139da3a663c9bad02000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={"_id"=>"5139da3a663c9bad02000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.0769ms)
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:48 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.1246ms)
+  Rendered posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:14:51 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-03-08 18:16:53 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=mongoid_associations_example_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.8614ms)
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 18:16:53 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-03-08 18:16:53 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-03-08 18:16:54 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-08 18:16:54 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 18:16:54 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 18:16:54 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-03-08 18:16:54 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-03-08 18:16:54 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 18:16:54 +0530
+Served asset /application.js - 304 Not Modified (2ms)

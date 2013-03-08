@@ -1,0 +1,23 @@
+===  Mongoid + associtions rails example ===
+
+This is the simple example to implement the associtions in the mondodb by mongoid as like associations in Acitverecord.
+
+There are two ways to define associations with Mongoid.
+1) Through a reference association
+   This behaves in a similar way to the relations between tables in ActiveRecord and relational databases in that there are two separate records that are related through an id column. 
+2) embedded association 
+   which would mean in this case that the comments are embedded inside the same document as the article.
+
+Examples:
+
+1) embeds_many :comments
+   embedded_in :article, :inverse_of => :comments 
+
+2) references_many :articles
+   referenced_in :author
+
+
+
+Please contact if any queries on below email
+
+ayraju001@gmail.com
